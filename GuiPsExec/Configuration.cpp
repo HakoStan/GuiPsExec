@@ -28,14 +28,14 @@ VOID Configuration::setTargetComputer(std::wstring& targetComputer)
 	this->m_targetComputer = targetComputer;
 }
 
-VOID Configuration::parseArguments(INT argc, PWCHAR argv[])
+VOID Configuration::parseArguments(INT numOfArgs, PWCHAR args[])
 {
-	if (argc != 2)
+	if (2 != numOfArgs)
 	{
 		throw Exceptions::ConfigurationExceptions::ArgumentsParseException();
 	}
 
-	this->m_targetComputer = argv[1];
+	this->m_targetComputer = args[1];
 }
 
 Configuration::Configuration() {};
