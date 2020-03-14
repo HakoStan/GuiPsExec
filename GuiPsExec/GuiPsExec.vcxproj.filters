@@ -8,6 +8,18 @@
     <Filter Include="Configuration">
       <UniqueIdentifier>{9db07809-ecf8-46c1-ac90-0de91a883324}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{59b6790e-c2e3-4e5f-b7b0-1462f360aebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServiceInstaller">
+      <UniqueIdentifier>{590bf7c7-02e0-4e06-b2aa-2accbefcb80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinFramework">
+      <UniqueIdentifier>{7c80643b-06af-4b3c-a942-5b39fef3e31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinFramework\FileApi">
+      <UniqueIdentifier>{10fe6a73-8e83-48c9-b4a9-34a38fbcd3c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -16,6 +28,12 @@
     <ClCompile Include="Configuration.cpp">
       <Filter>Configuration</Filter>
     </ClCompile>
+    <ClCompile Include="ServiceInstaller.cpp">
+      <Filter>ServiceInstaller</Filter>
+    </ClCompile>
+    <ClCompile Include="WinFramework\FileApi\FileApi.cpp">
+      <Filter>WinFramework\FileApi</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration.hpp">
@@ -23,6 +41,18 @@
     </ClInclude>
     <ClInclude Include="ConfigurationException.h">
       <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceInstaller.h">
+      <Filter>ServiceInstaller</Filter>
+    </ClInclude>
+    <ClInclude Include="WinFramework\FileApi\FileApi.h">
+      <Filter>WinFramework\FileApi</Filter>
+    </ClInclude>
+    <ClInclude Include="WinFramework\FileApi\FileApiExceptions.h">
+      <Filter>WinFramework\FileApi</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

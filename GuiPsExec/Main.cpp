@@ -1,6 +1,7 @@
 #include <Windows.h>
-#include "Configuration.hpp"
 #include <iostream>
+#include "Configuration.hpp"
+#include "Common.hpp"
 
 
 INT wmain(INT argc, PWCHAR argv[])
@@ -12,10 +13,10 @@ INT wmain(INT argc, PWCHAR argv[])
 	catch (Exceptions::ConfigurationExceptions::ArgumentsParseException)
 	{
 		Configuration::printUsage();
+		return ERROR_ARGUMENTS_PARSE;
 	}
+	DEBUG_PRINT(Configuration::getInstance().getTargetComputer());
 
-	std::wcout << Configuration::getInstance().getTargetComputer();
 
-
-	return 0;
+	return ERROR_GUIPSEXEC_SUCCESS;
 }
