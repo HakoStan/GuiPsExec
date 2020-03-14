@@ -18,7 +18,7 @@ Errors_e ServiceInstaller::CopyServiceExecutable(std::wstring& targetComputer)
 	std::wstring sourceFile = { L"C:\\temp\\cmd.exe" };
 	std::wstring targetFile = targetComputer + L"\\admin$\\system32\\GuiPsExecSvc.exe";
 	
-	WinFramework::FileApi::CopyFile(sourceFile, targetComputer, TRUE);
+	WinFramework::FileApi::CopyFile(sourceFile, targetFile, TRUE);
 
 	return ERROR_GUIPSEXEC_SUCCESS;
 }

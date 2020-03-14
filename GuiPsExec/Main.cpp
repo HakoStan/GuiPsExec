@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Configuration.hpp"
 #include "Common.hpp"
+#include "ServiceInstaller.h"
 
 
 INT wmain(INT argc, PWCHAR argv[])
@@ -17,6 +18,9 @@ INT wmain(INT argc, PWCHAR argv[])
 	}
 	DEBUG_PRINT(Configuration::getInstance().getTargetComputer());
 
+	std::wstring targetComputer = Configuration::getInstance().getTargetComputer();
+
+	ServiceInstaller::getInstance().RunInstallProcedure(targetComputer);
 
 	return ERROR_GUIPSEXEC_SUCCESS;
 }

@@ -13,4 +13,6 @@ VOID WinFramework::FileApi::CopyFile(std::wstring& sourceFile, std::wstring& tar
 	{
 		throw WinFramework::FileApiExceptions::SourceFileNotFound();
 	}
+
+	throw WinFramework::FileApiExceptions::UnkownException();
 }
