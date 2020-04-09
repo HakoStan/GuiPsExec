@@ -1,4 +1,5 @@
-#include "FileApi.h"
+#include "FileApi.hpp"
+#include "Exceptions\GeneralWin32Exceptions.hpp"
 
 VOID WinFramework::FileApi::CopyFile(std::wstring& sourceFile, std::wstring& targetFile, BOOL overrideFile)
 {
@@ -14,5 +15,5 @@ VOID WinFramework::FileApi::CopyFile(std::wstring& sourceFile, std::wstring& tar
 		throw WinFramework::FileApiExceptions::SourceFileNotFound();
 	}
 
-	throw WinFramework::FileApiExceptions::UnkownException();
+	throw WinFramework::GeneralWin32Exceptions::UnkownWin32Exception();
 }

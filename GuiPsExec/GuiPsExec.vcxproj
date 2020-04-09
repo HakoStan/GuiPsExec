@@ -78,6 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <TreatWarningAsError>true</TreatWarningAsError>
       <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalIncludeDirectories>C:\Git\GuiPsExec\GuiPsExec\WinFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -91,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>C:\Git\GuiPsExec\GuiPsExec\WinFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>C:\Git\GuiPsExec\GuiPsExec\WinFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>C:\Git\GuiPsExec\GuiPsExec\WinFramework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,14 +140,17 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ServiceInstaller.cpp" />
     <ClCompile Include="WinFramework\FileApi\FileApi.cpp" />
+    <ClCompile Include="WinFramework\ServiceApi\ServiceApi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.hpp" />
     <ClInclude Include="Configuration.hpp" />
     <ClInclude Include="ConfigurationException.h" />
     <ClInclude Include="ServiceInstaller.h" />
-    <ClInclude Include="WinFramework\FileApi\FileApi.h" />
-    <ClInclude Include="WinFramework\FileApi\FileApiExceptions.h" />
+    <ClInclude Include="WinFramework\Exceptions\GeneralWin32Exceptions.hpp" />
+    <ClInclude Include="WinFramework\FileApi\FileApi.hpp" />
+    <ClInclude Include="WinFramework\FileApi\FileApiExceptions.hpp" />
+    <ClInclude Include="WinFramework\ServiceApi\ServiceApi.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

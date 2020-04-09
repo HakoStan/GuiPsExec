@@ -20,7 +20,11 @@ INT wmain(INT argc, PWCHAR argv[])
 
 	std::wstring targetComputer = Configuration::getInstance().getTargetComputer();
 
-	ServiceInstaller::getInstance().RunInstallProcedure(targetComputer);
+	Errors_e returnCode = ServiceInstaller::getInstance().RunInstallProcedure(targetComputer);
+	if (GUIPSEXEC_FAILED(returnCode))
+	{
+		return returnCode;
+	}
 
-	return ERROR_GUIPSEXEC_SUCCESS;
+	return GUIPSEXEC_SUCCESS;
 }

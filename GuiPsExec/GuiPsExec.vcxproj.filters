@@ -20,6 +20,12 @@
     <Filter Include="WinFramework\FileApi">
       <UniqueIdentifier>{10fe6a73-8e83-48c9-b4a9-34a38fbcd3c9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WinFramework\ServiceApi">
+      <UniqueIdentifier>{71a5d498-6623-41b7-a170-59533ed2f8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinFramework\Exceptions">
+      <UniqueIdentifier>{5a21c398-6793-4077-8bec-a169baac9d46}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -33,6 +39,9 @@
     </ClCompile>
     <ClCompile Include="WinFramework\FileApi\FileApi.cpp">
       <Filter>WinFramework\FileApi</Filter>
+    </ClCompile>
+    <ClCompile Include="WinFramework\ServiceApi\ServiceApi.cpp">
+      <Filter>WinFramework\ServiceApi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,11 +57,17 @@
     <ClInclude Include="ServiceInstaller.h">
       <Filter>ServiceInstaller</Filter>
     </ClInclude>
-    <ClInclude Include="WinFramework\FileApi\FileApi.h">
+    <ClInclude Include="WinFramework\FileApi\FileApiExceptions.hpp">
       <Filter>WinFramework\FileApi</Filter>
     </ClInclude>
-    <ClInclude Include="WinFramework\FileApi\FileApiExceptions.h">
+    <ClInclude Include="WinFramework\FileApi\FileApi.hpp">
       <Filter>WinFramework\FileApi</Filter>
+    </ClInclude>
+    <ClInclude Include="WinFramework\Exceptions\GeneralWin32Exceptions.hpp">
+      <Filter>WinFramework\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="WinFramework\ServiceApi\ServiceApi.hpp">
+      <Filter>WinFramework\ServiceApi</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

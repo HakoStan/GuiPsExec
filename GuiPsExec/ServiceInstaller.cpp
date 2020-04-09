@@ -10,7 +10,7 @@ ServiceInstaller& ServiceInstaller::getInstance()
 Errors_e ServiceInstaller::RunInstallProcedure(std::wstring& targetComputer)
 {
 	CopyServiceExecutable(targetComputer);
-	return ERROR_GUIPSEXEC_SUCCESS;
+	return GUIPSEXEC_SUCCESS;
 }
 
 Errors_e ServiceInstaller::CopyServiceExecutable(std::wstring& targetComputer)
@@ -20,7 +20,7 @@ Errors_e ServiceInstaller::CopyServiceExecutable(std::wstring& targetComputer)
 	
 	WinFramework::FileApi::CopyFile(sourceFile, targetFile, TRUE);
 
-	return ERROR_GUIPSEXEC_SUCCESS;
+	return GUIPSEXEC_SUCCESS;
 }
 
 ServiceInstaller::ServiceInstaller() {};
